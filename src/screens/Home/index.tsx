@@ -36,18 +36,6 @@ export function Home(){
       date: '22/06 às 20:40h',
       description: 'Ciço de manu vai com tudo pra conseguir o abate'
     },
-    {
-      id: '3',
-      guild: {
-        id: '1',
-        name: 'Lendários',
-        icon: null,
-        owner: true
-      },
-      category: '1',
-      date: '22/06 às 20:40h',
-      description: 'Ciço de manu vai com tudo pra conseguir o abate'
-    },
     
   ];
 
