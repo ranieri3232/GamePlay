@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "GamePlay",
-    "slug": "GamePlay",
+    "name": "gameplay",
+    "slug": "gameplay",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "scheme": "mycoolredirect",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

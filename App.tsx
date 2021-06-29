@@ -9,6 +9,8 @@ import { useFonts } from 'expo-font';
 import { Routes } from './src/routes';
 import { StatusBar } from 'expo-status-bar';
 import { Background } from './src/components/Background';
+import { AuthProvider } from './src/hooks/auth';
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
@@ -22,7 +24,9 @@ export default function App() {
   return (
     <Background>
       <StatusBar style="auto" />
-      <Routes/>
+      <AuthProvider>
+        <Routes/>
+      </AuthProvider>
     </Background>  
       
   );

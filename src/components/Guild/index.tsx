@@ -14,12 +14,11 @@ import {GuildIcon} from '../GuildIcon';
 import { theme } from "../../global/styles/theme";
 
 
-interface GuildProps{
+export interface GuildProps{
   id: string;
   name: string;
   icon: string | null;
   owner: boolean;
-
 }
 
 interface Props extends TouchableOpacityProps{
