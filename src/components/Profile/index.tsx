@@ -1,14 +1,23 @@
 import React from "react";
+
+import { RectButton } from "react-native-gesture-handler";
 import { View, Text } from "react-native";
 import { useAuth } from "../../hooks/auth";
 import { Avatar } from "../Avatar";
 import {styles } from './styles';
 
-export function Profile(){
+
+interface Props{
+  openLoggoutModal: () => void; 
+}
+
+export function Profile({openLoggoutModal} : Props){
   const {user} = useAuth();
   return (
     <View style={styles.container}>
-      <Avatar urlImage={user.avatar}/>
+      <RectButton onPress={openLoggoutModal}>
+        <Avatar urlImage={user.avatar}/>
+      </RectButton>
       <View>
         <View style={styles.user}>
           <Text style={styles.greetings}>

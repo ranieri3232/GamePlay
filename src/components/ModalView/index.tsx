@@ -16,17 +16,15 @@ export function ModalView({children, closeModal, ...rest}:Props){
       animationType="slide"
       {...rest}
     >
-      <TouchableWithoutFeedback onPress={closeModal}>
-        <View style={styles.overlay}>
-          <View style={styles.container}>
-            <Background>
-              <View style={styles.bar}/>
-              {children}
-            </Background>
+      <View style={styles.overlay}>
+        <View style={styles.container}>
+          <Background>
+            <View style={styles.bar}/>
+            {children}
+          </Background>
 
-          </View>
         </View>
-      </TouchableWithoutFeedback>
+      </View>
     </Modal>
   );
 }

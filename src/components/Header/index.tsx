@@ -22,7 +22,7 @@ export function Header({title, action} : Props){
   }
   return (
     <LinearGradient
-    style={styles.container}
+      style={styles.container}
       colors={[secondary100, secondary40]}
     >
       <BorderlessButton
